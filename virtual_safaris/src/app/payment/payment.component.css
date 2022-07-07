@@ -1,4 +1,10 @@
 mat-card{
     text-align: center;
-    
+
+}
+button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }

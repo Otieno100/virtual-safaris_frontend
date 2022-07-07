@@ -1,16 +1,16 @@
-
 <div>
     <mat-card>
-      <form>
+      <form [formGroup]="paymentForm" (submit)="submit()">
         <mat-form-field appearance="fill">
-          <mat-label>Enter phone number</mat-label>
+          <mat-label formControlName="number">Enter phone number</mat-label>
           <input matInput />
         </mat-form-field><br><br>
         <mat-form-field appearance="fill">
-          <mat-label>Amount</mat-label>
+          <mat-label formControlName="amount">Amount</mat-label>
           <input matInput />
         </mat-form-field>
       </form>
+      <button type="submit" id="btn-primary">Pay Now</button>
     </mat-card>
   </div>
-  <button type="submit" id="btn-primary">Pay Now</button>
+ 
