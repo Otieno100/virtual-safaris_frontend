@@ -1,16 +1,19 @@
-<div>
-    <mat-card>
-      <form [formGroup]="paymentForm" (submit)="submit()">
+<div class="container">
+  <div class="row">
+    
+      <form class="form-control" [formGroup]="paymentForm" (ngSubmit)="submit()">
         <mat-form-field appearance="fill">
-          <mat-label formControlName="number">Enter phone number</mat-label>
-          <input matInput />
-        </mat-form-field><br><br>
+          <mat-label for="number">Enter phone number</mat-label>
+          <input  formControlName="number" matInput /> </mat-form-field> 
+          <br>
         <mat-form-field appearance="fill">
-          <mat-label formControlName="amount">Amount</mat-label>
-          <input matInput />
+          <mat-label for="amount">Amount</mat-label>
+          <input class="form-control" formControlName="amount" matInput />
         </mat-form-field>
+        <button mat-button type="submit" id="btn-primary">Pay Now</button>
       </form>
-      <button type="submit" id="btn-primary">Pay Now</button>
-    </mat-card>
+   
   </div>
- 
+
+</div>
+
